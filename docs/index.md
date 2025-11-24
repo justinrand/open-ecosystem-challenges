@@ -14,7 +14,7 @@ headaches.
 - 📖 **Story-driven** - Learn through engaging narratives
 - 🚀 **Zero setup** - Run in GitHub Codespaces, pre-configured and ready
 - ✅ **Two-step verification** - [Smoke tests and GitHub Actions](verification.md) validate your solution
-- 🎓 **Three difficulty levels** - Easy, Medium, and Hard for each adventure
+- 🎓 **Three levels** - Beginner, Intermediate, and Expert for each adventure
 
 ## 🗺️ Available Adventures
 
@@ -28,17 +28,17 @@ More coming soon!
 
 ## 🎮 How It Works
 
-**Each difficulty level is independent** - start anywhere, complete in any order. Levels share a connected story but have their own:
+**Each level is independent** - start anywhere, complete in any order. Levels share a connected story but have their own:
 
 - Codespace configuration
 - Documentation and guides  
 - Validation tests
 
-**Difficulty levels:**
+**Levels:**
 
-- 🟢 **Easy**: New to the technology? Start here to learn the basics
-- 🟡 **Medium**: Comfortable with fundamentals? Practice advanced patterns
-- 🔴 **Hard**: Want a real challenge? Tackle complex real-world scenarios
+- 🟢 **Beginner**: New to the technology? Start here to learn the basics
+- 🟡 **Intermediate**: Comfortable with fundamentals? Practice advanced patterns
+- 🔴 **Expert**: Want a real challenge? Tackle complex real-world scenarios
 
 ## ✅ How to Verify Your Solution
 

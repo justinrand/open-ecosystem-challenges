@@ -14,7 +14,7 @@ headaches.
 - 📖 **Story-driven** - Learn through engaging narratives
 - 🚀 **Zero setup** - Run in GitHub Codespaces, pre-configured and ready
 - ✅ **Two-step verification** - Smoke tests and GitHub Actions validate your solution
-- 🎓 **Three difficulty levels** - Easy, Medium, and Hard for each adventure
+- 🎓 **Three levels** - Beginner, Intermediate, and Expert for each adventure
 
 ## 🚀 Ready to Start?
 

@@ -28,11 +28,11 @@ telemetry is suspiciously quiet.
 ## 🎮 Choose Your Level
 
 Each level is a standalone challenge with its own Codespace that builds on the story while being technically
-independent — pick your difficulty and start wherever you feel comfortable!
+independent — pick your level and start wherever you feel comfortable!
 
-> 💡 Not sure which level to choose? [Learn more about difficulty levels](/#how-it-works)
+> 💡 Not sure which level to choose? [Learn more about levels](/#how-it-works)
 
-### 🟢 Easy: Broken Echoes
+### 🟢 Beginner: Broken Echoes
 
 **Status:** ✅ Available  
 **Topics:** ArgoCD ApplicationSets, GitOps fundamentals
@@ -40,7 +40,7 @@ independent — pick your difficulty and start wherever you feel comfortable!
 The Echo Server is misbehaving. Both environments seem to be down, and messages are silent. Your mission: investigate
 the ArgoCD configuration and restore proper multi-environment delivery.
 
-[**Start the Easy Challenge**](./easy.md){ .md-button .md-button--primary }
+[**Start the Beginner Challenge**](./beginner.md){ .md-button .md-button--primary }
 
 ---
 

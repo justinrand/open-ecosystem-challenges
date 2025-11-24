@@ -1,11 +1,11 @@
-# 🟢 Easy: Broken Echoes
+# 🟢 Beginner: Broken Echoes
 
 The Echo Server is misbehaving. Both environments seem to be down, and messages are silent. Your mission: investigate
 the ArgoCD configuration and restore proper multi-environment delivery.
 
 ## ⏰ Deadline
 
-December 8, 2025, 10:00 PM (CET)
+December 1, 2025, 24:00 PM (CET)
 > ℹ️ You can still complete the challenge after this date, but points will only be awarded for submissions before the
 > deadline.
 
@@ -41,7 +41,7 @@ By the end of this level, you should:
 
 - From your fork, click the green **Code** button → **Codespaces hamburger menu** → **New with options**.
   ![Create a new Codespace](./images/new-codespace.png)
-- Select the **Adventure 01 | 🟢 Easy (Broken Echoes)** configuration.
+- Select the **Adventure 01 | 🟢 Beginner (Broken Echoes)** configuration.
   ![Codespace options](./images/codespace-options.png)
 
 > ⚠️ **Important:** The challenge will not work if you choose another configuration (or the default).
@@ -71,14 +71,14 @@ By the end of this level, you should:
 
 - All errors are located in this ApplicationSet:
   ```
-  adventures/01-echoes-lost-in-orbit/easy/manifests/appset.yaml
+  adventures/01-echoes-lost-in-orbit/beginner/manifests/appset.yaml
   ```
 - Learn more about [ApplicationSets](https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/) and
   the [Application Specification](https://argo-cd.readthedocs.io/en/stable/user-guide/application-specification/) in
   the [ArgoCD docs](https://argo-cd.readthedocs.io/en/stable/user-guide/application-specification/).
 - After making changes, apply them:
   ```
-  kubectl apply -n argocd -f adventures/01-echoes-lost-in-orbit/easy/manifests/appset.yaml
+  kubectl apply -n argocd -f adventures/01-echoes-lost-in-orbit/beginner/manifests/appset.yaml
   ```
   (Run from the repo root)
 
@@ -91,7 +91,7 @@ Once you think you've solved the challenge, it's time to verify!
 Run the provided smoke test script from the repo root:
 
 ```bash
-adventures/01-echoes-lost-in-orbit/easy/smoke-test.sh
+adventures/01-echoes-lost-in-orbit/beginner/smoke-test.sh
 ```
 
 If the test passes, your solution is very likely correct! 🎉

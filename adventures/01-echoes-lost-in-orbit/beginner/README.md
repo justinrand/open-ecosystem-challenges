@@ -2,7 +2,7 @@
 
 Welcome to the first challenge in the **Open Ecosystem Challenge** series!  
 Your mission: restore interstellar communication by fixing a broken GitOps setup.  
-This is a hands-on troubleshooting exercise using **Kubernetes**, **Argo CD**, and **Kustomize**.
+This is a hands-on troubleshooting exercise using **Kubernetes** and **Argo CD**.
 
 The entire **infrastructure is pre-provisioned in your Codespace** — Kubernetes cluster, Argo CD, and sample app are
 ready to go.  

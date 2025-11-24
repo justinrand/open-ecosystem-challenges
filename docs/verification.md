@@ -28,10 +28,10 @@ validations are performed by the full verification workflow.
 Each challenge level has its own smoke test script. Run it from the repository root:
 
 ```bash
-adventures/<adventure-name>/<difficulty>/smoke-test.sh
+adventures/<adventure-name>/<level>/smoke-test.sh
 ```
 
-**Example for Adventure 01, Easy level:**
+**Example for Adventure 01, Beginner level:**
 
 ```bash
 adventures/01-echoes-lost-in-orbit/easy/smoke-test.sh
@@ -119,14 +119,14 @@ Once your verification workflow passes, it's time to share your success with the
     - Include the workflow name and your GitHub username in the screenshot
 
 2. **Post your screenshot** as a comment to the original challenge thread
-    - Find the discussion thread for your specific adventure and difficulty level
+    - Find the discussion thread for your specific adventure and level
     - Add a comment with your screenshot
     - Optionally, share any interesting learnings or challenges you faced 🙌
 
 3. **Celebrate!** 🎉
     - You've officially completed the challenge
     - Your contribution is now part of the Open Ecosystem community
-    - Ready for more? Move on to the next difficulty level or choose another adventure!
+    - Ready for more? Move on to the next level or choose another adventure!
 
 ### Why Submit?
 

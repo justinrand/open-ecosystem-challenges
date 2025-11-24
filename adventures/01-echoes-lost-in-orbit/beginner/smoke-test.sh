@@ -8,7 +8,7 @@ source "$SCRIPT_DIR/../../../lib/loader.sh"
 
 print_header \
   'Challenge 01: Echoes Lost in Orbit' \
-  'Level 1: The Echo Distortion' \
+  'Level 1: Broken Echoes' \
   'Smoke Test Verification'
 
 check_prerequisites kubectl curl

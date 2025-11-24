@@ -2,4 +2,4 @@ site_name: '🛰️ 01: Echoes Lost in Orbit'
 
 nav:
   - Introduction: index.md
-  - easy.md
+  - beginner.md
