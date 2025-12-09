@@ -32,4 +32,4 @@ spec:
           address: http://prometheus-server.prometheus.svc.cluster.local
           query: |
             # Check how many containers are ready (should be at least 1)
-            kube_pod_container_status_ready{namespace=~"{{args.namespace}}",pod=~"echo-server-.*"}
+            count(kube_pod_container_status_ready{namespace=~"{{args.namespace}}",pod=~"echo-server-.*"})
