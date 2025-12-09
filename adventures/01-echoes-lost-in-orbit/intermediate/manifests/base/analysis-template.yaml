@@ -34,3 +34,4 @@ spec:
             # Check how many containers are ready (should be at least 1)
             # Look at kube_pod_container_status_* metrics
             # Test in Prometheus UI (port 30102 in the "Ports" tab of VS Code)
+            kube_pod_container_status_running{namespace=~"{{args.namespace}}",pod=~"echo-server-.*"}
