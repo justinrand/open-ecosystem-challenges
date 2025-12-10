@@ -32,7 +32,7 @@ spec:
           address: http://prometheus-server.prometheus.svc.cluster.local
           query: |
             sum(kube_pod_container_status_ready{
-              namespace=~"{{args.namespace}}",
+              namespace="{{args.namespace}}",
               pod=~"echo-server-.*",
               container=~".*"
             }) or vector(0)
