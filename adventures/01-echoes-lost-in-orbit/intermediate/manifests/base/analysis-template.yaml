@@ -31,7 +31,8 @@ spec:
         prometheus:
           address: http://prometheus-server.prometheus.svc.cluster.local
           query: |
-            sum(increase(kube_pod_container_status_ready{
+            sum(kube_pod_container_status_ready{
               namespace=~"{{args.namespace}}",
-              pod=~"echo-server-.*"
-            }[1m])) or vector(0)
+              pod=~"echo-server-.*",
+              container=~".*"
+            }) or vector(0)
