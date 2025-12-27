@@ -27,6 +27,10 @@ data:
         endpoint: jaeger-collector.jaeger.svc.cluster.local:4317
         tls:
           insecure: true
+      spanmetrics:
+        endpoint: prometheus-server.prometheus.svc.cluster.local:8889
+        tls:
+          insecure: true
 
     extensions:
       health_check:
