@@ -39,6 +39,9 @@ data:
       extensions: [health_check]
       pipelines:
         traces:
-          receivers: [otlp, spanmetrics]
-          exporters: [debug, otlp, prometheus]
+          receivers: [otlp]
+          exporters: [debug, otlp, spanmetrics]
+        metrics:
+          receivers: [spanmetrics]
+          exporters: [prometheus]
           
