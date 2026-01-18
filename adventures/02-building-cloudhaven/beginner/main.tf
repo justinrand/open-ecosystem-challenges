@@ -17,6 +17,10 @@ terraform {
     }
   }
 
+  backend "gcs" {
+    bucket = "cloudhaven-tfstate"
+    prefix = "tofu/tf.state"
+  }
   # ---------------------------------------------------------------------------
   # Remote State Backend
   # ---------------------------------------------------------------------------
@@ -24,7 +28,7 @@ terraform {
   # collaboration between guild members. This prevents state conflicts and
   # provides a shared source of truth for infrastructure state.
   # ---------------------------------------------------------------------------
-  # TODO: uhh so apparently we need to store state in some bucket called
+  # DONE TODO: uhh so apparently we need to store state in some bucket called
   #       "cloudhaven-tfstate"? ran out of time, someone else can figure this out
   #
   #       p.s. i think you need to run `tofu init -migrate-state` after adding

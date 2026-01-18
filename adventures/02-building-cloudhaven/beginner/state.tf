@@ -10,11 +10,14 @@ resource "google_storage_bucket" "tfstate" {
 
   # Prevent accidental deletion of the state bucket
   force_destroy = false
+  versioning {
+    enabled = true
+  }
 
   # Use Standard storage class for frequently accessed state files
   storage_class = "STANDARD"
 
-  # TODO: should we enable versioning? sounds important for state files but
+  # DONE TODO: should we enable versioning? sounds important for state files but
   #       wasn't sure how to do it... look into this later maybe
 
   # Uniform bucket-level access for simplified permissions
