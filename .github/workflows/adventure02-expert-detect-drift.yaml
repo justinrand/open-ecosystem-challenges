@@ -54,8 +54,9 @@ jobs:
       - name: 📝 Run OpenTofu Plan
         id: plan
         working-directory: ${{ env.WORKING_DIR }}
+        continue-on-error: true
         run: |
-          tofu plan -detailed-exitcode || true
+          tofu plan -detailed-exitcode
           if [ ?$ -eq 2 ]; then
             echo "drift=true" >> $GITHUB_OUTPUT
           else
