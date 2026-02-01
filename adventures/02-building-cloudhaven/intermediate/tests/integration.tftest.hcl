@@ -28,7 +28,7 @@ provider "google" {
 # ============================================================================
 run "apply_districts" {
   # command = ??? # not sure if plan or apply here
-  command = plan
+  command = apply
   # check vault names for each district - should be cloudhaven-{name}-vault or smth
   # the districts are: north-market, south-bazaar, scholars-district
   #
@@ -39,6 +39,20 @@ run "apply_districts" {
   #
   # this should be enough to pass but feel free to add more tests if u want
 
+  assert {
+    condition = output.districts["south-bazaar"].vault.name == "cloudhaven-south-bazaar-vault"
+    error_message = "verify vault name"
+  }
+
+  assert {
+    condition = output.districts["north-market"].vault.name == "cloudhaven-north-market-vault"
+    error_message = "verify vault name"
+  }
+
+    assert {
+    condition = output.districts["scholars-district"].vault.name == "cloudhaven-scholars-district-vault"
+    error_message = "verify vault name"
+  }
   assert {
     condition     = output.districts["south-bazaar"].ledger.disk_size == 10
     error_message = "tests are not implemented yet"
