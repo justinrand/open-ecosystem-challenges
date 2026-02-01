@@ -57,7 +57,7 @@ jobs:
         continue-on-error: true
         run: |
           set +e
-          tofu plan -detailed-exitcode
+          tofu plan -out tfplan -detailed-exitcode
           EXITCODE=$?
           if [ $EXITCODE -eq 2 ]; then
             echo "drift=true" >> $GITHUB_OUTPUT
