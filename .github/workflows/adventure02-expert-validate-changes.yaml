@@ -123,6 +123,7 @@ jobs:
           scan-type: config
           input: ./adventures/02-building-cloudhaven/expert
           format: json
+          exit-code: 0
           output: vulnerabilities.json
           severity: CRITICAL,HIGH,MEDIUM,LOW,UNKNOWN
 
