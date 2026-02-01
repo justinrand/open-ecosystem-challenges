@@ -117,6 +117,12 @@ jobs:
 
       - name: 🔒 Scan for Vulnerabilities
         uses: aquasecurity/trivy-action@0.33.1
+        with:
+          scan-type: config
+          input: ./adventures/02-building-cloudhaven/expert
+          format: json
+          output: vulnerabilities.json
+          severity: CRITICAL,HIGH,MEDIUM,LOW,UNKNOWN
 
       - name: 📊 Count Vulnerabilities
         id: count
