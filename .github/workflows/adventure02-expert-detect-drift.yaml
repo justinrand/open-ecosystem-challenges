@@ -58,7 +58,8 @@ jobs:
         run: |
           set +e
           tofu plan -detailed-exitcode
-          if [ ?$ -eq 2 ]; then
+          EXITCODE=$?
+          if [ $EXITCODE -eq 2 ]; then
             echo "drift=true" >> $GITHUB_OUTPUT
           else
             echo "drift=false" >> $GITHUB_OUTPUT
