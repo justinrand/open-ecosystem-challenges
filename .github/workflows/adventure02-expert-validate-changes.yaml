@@ -120,8 +120,8 @@ jobs:
       - name: 🔒 Scan for Vulnerabilities
         uses: aquasecurity/trivy-action@0.33.1
         with:
-          scan-type: config
-          input: ./adventures/02-building-cloudhaven/expert
+          scan-type: fs
+          scan-ref: .
           format: json
           exit-code: 0
           output: vulnerabilities.json
