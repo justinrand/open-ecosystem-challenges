@@ -45,11 +45,11 @@ resource "google_sql_database_instance" "ledger" {
       record_client_address   = true
     }
 
-    user_labels = {
-      purpose    = var.description
+    user_labels = merge(local.common_labels, {
+      purpose    = "merchant-ledger"
       district   = var.name
       managed-by = "opentofu"
-    }
+    })
 
     deletion_protection_enabled = false
   }
