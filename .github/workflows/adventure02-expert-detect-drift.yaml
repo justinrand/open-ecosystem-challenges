@@ -55,7 +55,7 @@ jobs:
         id: plan
         working-directory: ${{ env.WORKING_DIR }}
         run: |
-          tofu plan -detailed-exitcode
+          EXITCODE=$(tofu plan -detailed-exitcode)
           if [ ?$ -eq 2 ]; then
             echo "drift=true" >> $GITHUB_OUTPUT
           else
