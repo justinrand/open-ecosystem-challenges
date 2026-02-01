@@ -28,7 +28,7 @@ provider "google" {
 # ============================================================================
 run "apply_districts" {
   # command = ??? # not sure if plan or apply here
-
+  command = apply
   # check vault names for each district - should be cloudhaven-{name}-vault or smth
   # the districts are: north-market, south-bazaar, scholars-district
   #
@@ -40,7 +40,17 @@ run "apply_districts" {
   # this should be enough to pass but feel free to add more tests if u want
 
   assert {
-    condition     = var.name == ""
+    condition     = output.districts["south-bazaar"].ledger.disk_size == "10GB"
+    error_message = "tests are not implemented yet"
+  }
+
+  assert {
+    condition     = output.districts["north-market"].ledger.disk_size == "20GB"
+    error_message = "tests are not implemented yet"
+  }
+
+  assert {
+    condition     = output.districts["scholars-district"].ledger.disk_size == "50GB"
     error_message = "tests are not implemented yet"
   }
 }

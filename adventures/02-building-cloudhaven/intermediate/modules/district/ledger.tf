@@ -46,8 +46,8 @@ resource "google_sql_database_instance" "ledger" {
     }
 
     user_labels = {
-      purpose = "merchant-ledger"
-      district = var.name
+      purpose    = "merchant-ledger"
+      district   = var.name
       managed-by = "opentofu"
     }
 
